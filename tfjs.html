@@ -28,7 +28,7 @@
 		$( function() {
 			$( "#send_img_btn" ).click(function() {
 				$('#process').html("Loading model");
-				model_url="./KerasJS/model.json";
+				model_url="https://cdn.rawgit.com/bsaldivaremc2/keras_tutorials/master/KerasJS/model.json";
 
 				//const test_img = tf.fromPixels(image_data).reshape([1,64,64,3]); // Doesn't work
 				const test_img = tf.tensor4d(image_data,[1,64,64,3]);
