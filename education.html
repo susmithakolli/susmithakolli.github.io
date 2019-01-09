@@ -16,7 +16,8 @@
 	
 </head>
 <!--/head-->
-<body>
+<body onload="myfunction()">
+<div  id = "loading"></div>
 
 
 <header id="navigation">
@@ -147,5 +148,9 @@
 <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>var preload = document.getElementById('loading');
+  function myfunction(){
+    preload.style.display = 'none'; 
+  } </script>
 </body>
 </html>

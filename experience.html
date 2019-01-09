@@ -14,7 +14,8 @@
 	<script src="js/respond.min.js"></script> <![endif]-->
 </head>
 <!--/head-->
-<body>
+<body onload="myfunction()">
+<div  id = "loading"></div>
 
 
 <header id="navigation">
@@ -139,5 +140,8 @@
 </div>
 </div>
 </footer>
-<!--/#footer--><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/bootstrap.min.js"></script><script type="text/javascript" src="js/smoothscroll.js"></script><script type="text/javascript" src="js/jquery.isotope.min.js"></script><script type="text/javascript" src="js/jquery.prettyPhoto.js"></script><script type="text/javascript" src="js/jquery.parallax.js"></script><script type="text/javascript" src="js/main.js"></script></body>
+<!--/#footer--><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/bootstrap.min.js"></script><script type="text/javascript" src="js/smoothscroll.js"></script><script type="text/javascript" src="js/jquery.isotope.min.js"></script><script type="text/javascript" src="js/jquery.prettyPhoto.js"></script><script type="text/javascript" src="js/jquery.parallax.js"></script><script type="text/javascript" src="js/main.js"></script><script>var preload = document.getElementById('loading');
+  function myfunction(){
+  	preload.style.display = 'none'; 
+  } </script></body>
 </html>

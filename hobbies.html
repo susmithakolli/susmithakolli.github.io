@@ -18,7 +18,8 @@
 	<script src="js/respond.min.js"></script> <![endif]-->
 </head>
 <!--/head-->
-<body>
+<body onload="myfunction()">
+<div  id = "loading"></div>
 
 
 
@@ -316,9 +317,7 @@
 		<div class="container"> 
 			<div class="social-icons"> 
 				
-				<a href="https://www.facebook.com/kolli.susmitha.5" target="_blank"><i class="fa fa-facebook"></i></a>
-				<a href="https://www.linkedin.com/in/susmitha-kolli/" target="_blank"><i class="fa fa-linkedin"></i></a>
-				<a href="https://github.com/susmithakolli" target="_blank"><i class="fa fa-github"></i></a>
+				
 				
 			</div> 
 		</div> 
@@ -335,5 +334,9 @@
 <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>var preload = document.getElementById('loading');
+  function myfunction(){
+    preload.style.display = 'none'; 
+  } </script>
 </body>
 </html>
